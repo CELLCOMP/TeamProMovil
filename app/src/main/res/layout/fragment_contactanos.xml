@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="#FFE0B2"
+    android:layout_height="match_parent"
+    tools:context="com.example.octavio.teamproapp.contactanosFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        card_view:cardElevation="8dp"
+        card_view:contentPadding="5dp"
+        card_view:cardBackgroundColor="#d2d2d2"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactanosTV"
+                android:text="Contactános"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+            />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardviewCorreo"
+                android:layout_below="@id/contactanosTV"
+                android:elevation="8dp"
+                card_view:cardElevation="5dp"
+                card_view:contentPadding="5dp"
+                card_view:cardBackgroundColor="#002362c1"
+                card_view:cardCornerRadius="8dp"
+                card_view:cardUseCompatPadding="true"
+                android:layout_gravity="center_horizontal"
+                android:background="#918f8f"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0dffffff"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/emailicon"
+                        android:layout_toLeftOf="@id/correoTV"
+                        />
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Escribénos al correo"
+                    android:textSize="20sp"
+                        android:textColor="#101010"
+                    android:id="@+id/correoTV"
+                    android:layout_margin="5dp"
+                    android:layout_centerHorizontal="true"
+                />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:layout_below="@id/correoTV"
+            android:textSize="17sp"
+            android:id="@+id/nombreTV"
+            android:layout_margin="5dp"
+
+
+            />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nombreETActivity"
+                android:padding="5dp"
+                android:elevation="2dp"
+                android:layout_below="@id/nombreTV"
+                />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/descripcionContenido"
+                        android:text="Contenido"
+                        android:textSize="17sp"
+                        android:layout_below="@id/nombreETActivity"
+                        android:layout_margin="5dp"
+                        />
+                    <EditText
+                        android:elevation="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/contenidoETActivity"
+                        android:padding="5dp"
+                        android:layout_below="@id/descripcionContenido"
+                        />
+
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardviewCorreo"
+                android:text="Enviar"
+                android:background="#5c5959"
+                android:padding="5dp"
+                android:elevation="8dp"
+                android:shadowRadius="@android:integer/config_longAnimTime"
+                android:textColor="#fff"
+                android:id="@+id/buttonEnviarActivity"
+                android:layout_alignRight="@id/cardviewCorreo"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/olabel"
+                android:text="ó escribemos mediante:"
+                android:textSize="25sp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/buttonEnviarActivity"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/whatsappicon"
+                android:background="#00633b3b"
+                android:layout_margin="5dp"
+                android:layout_below="@id/olabel"
+                android:id="@+id/whatsappbuttonACtivity"
+                android:shadowRadius="@android:integer/config_longAnimTime"
+                android:layout_centerHorizontal="true"
+                android:elevation="5dp"
+                />
+
+            <ImageButton
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/facebookicon"
+                android:layout_below="@id/olabel"
+                android:elevation="5dp"
+                android:background="#00633b3b"
+                android:id="@+id/facebookbuttonActivity"
+                android:shadowRadius="@android:integer/config_longAnimTime"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@id/whatsappbuttonACtivity"
+                />
+
+            <ImageButton
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/telefonoicon"
+                android:layout_below="@id/olabel"
+                android:elevation="5dp"
+                android:shadowRadius="@android:integer/config_longAnimTime"
+                android:background="#00633b3b"
+                android:id="@+id/telefonoButtonActivity"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/whatsappbuttonACtivity"
+                />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</ScrollView>
+</RelativeLayout>

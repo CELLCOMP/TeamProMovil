@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#c1bca0"
+    tools:context="com.example.octavio.teamproapp.InstagramFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:progressDrawable="@drawable/progressbar_states"
+        android:id="@+id/progressBarInsta"/>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:id="@+id/instagramWebView"
+        android:background="#c1bca0"
+        android:layout_height="match_parent">
+
+
+
+    </WebView>
+
+</LinearLayout>

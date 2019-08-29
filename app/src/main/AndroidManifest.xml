@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.octavio.teamproapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logocamera"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logocamera"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".sesiones"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.octavio.teamproapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".QuienesSomosActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="¿Quiénes somos?"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.octavio.teamproapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".promocionesActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Promociones">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.octavio.teamproapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".contactanosActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="Contáctanos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.octavio.teamproapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FacebookActivity"
+            android:configChanges="screenSize|orientation"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ReservarSesion"
+            android:label="@string/title_activity_reservar_sesion"
+            android:configChanges="screenSize|orientation"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Insertar_Reservaciones"
+            android:configChanges="screenSize|orientation"
+            android:windowSoftInputMode="stateHidden"
+            >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.octavio.teamproapp.ReservarSesion" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TeamPro</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="Busqueda">Busqueda</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="descripcion">TeamPro es una empresa orgullosamente Danlídense que presta servicios de fotografía y video.</string>
+    <string name="descripcion2">Contamos con un equipo de trabajo
+(fotográfos y videográfos) con experiencia de fotografía publicitaria
+        de productos, eventos sociales y filmación de videos
+comerciales.
+</string>
+    <string name="submitted">Busqueda</string>
+    <string name="title_activity_reservar_sesion">ReservarSesion</string>
+</resources>
